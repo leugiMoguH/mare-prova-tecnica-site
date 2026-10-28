@@ -1,0 +1,1945 @@
+{
+  "_babylon-C2MG_MRF.js": {
+    "file": "assets/babylon-C2MG_MRF.js",
+    "name": "babylon",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_metrics-DEDQ-ZYb.js",
+      "_retarget-BR9o7Njh.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_depthPrePass-BBljQt45.js",
+      "_lightFragment-tU2RaitV.js",
+      "_engineStore-ByhWUXd8.js",
+      "_internalTexture-CGVgU7WF.js",
+      "_logger-Bv2UG8ST.js",
+      "_precisionDate-_pxQmcJS.js",
+      "_thinEngine.pure-BlpmKJZF.js",
+      "_buffer.pure-wB8ct3bV.js",
+      "_math.color.pure-Q8VyjntR.js",
+      "_math.scalar.functions-Ci74PiV6.js",
+      "_typeStore-DbYN1B8U.js",
+      "_math.plane-BZm3Ziur.js",
+      "_math.size-DQWPnAVc.js",
+      "_decorators-BCsPFieX.js",
+      "_tools.pure-CUUZ-Zpu.js",
+      "_decorators.serialization-DgzNNt_I.js",
+      "_bufferUtils-C6Uto34_.js",
+      "_smartArray-4z9iJzPr.js",
+      "_lightConstants-AkzrzUy1.js",
+      "_sceneComponent-BVUGDGYw.js",
+      "_material.pure-DA4oFtkA.js",
+      "_drawWrapper-BW1eBKj6.js"
+    ],
+    "dynamicImports": [
+      "_dds.pure-C6qdcYJk.js",
+      "node_modules/@babylonjs/core/Materials/Textures/Loaders/iesTextureLoader.js",
+      "node_modules/@babylonjs/core/Materials/Textures/Loaders/ddsTextureLoader.js",
+      "node_modules/@babylonjs/core/Materials/Textures/Loaders/basisTextureLoader.js",
+      "node_modules/@babylonjs/core/Materials/Textures/Loaders/envTextureLoader.js",
+      "node_modules/@babylonjs/core/Materials/Textures/Loaders/hdrTextureLoader.js",
+      "node_modules/@babylonjs/core/Materials/Textures/Loaders/ktxTextureLoader.js",
+      "node_modules/@babylonjs/core/Materials/Textures/Loaders/tgaTextureLoader.js",
+      "node_modules/@babylonjs/core/Materials/Textures/Loaders/exrTextureLoader.js",
+      "node_modules/@babylonjs/core/Meshes/mesh.vertexData.functions.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/color.vertex.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/color.fragment.js",
+      "node_modules/@babylonjs/core/Shaders/color.vertex.js",
+      "node_modules/@babylonjs/core/Shaders/color.fragment.js",
+      "node_modules/@babylonjs/core/Shaders/default.vertex.js",
+      "node_modules/@babylonjs/core/Shaders/default.fragment.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/default.vertex.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/default.fragment.js",
+      "_dumpTools.pure-CkJubRXA.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/postprocess.vertex.js",
+      "node_modules/@babylonjs/core/Shaders/postprocess.vertex.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/kernelBlur.fragment.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/kernelBlur.vertex.js",
+      "node_modules/@babylonjs/core/Shaders/kernelBlur.fragment.js",
+      "node_modules/@babylonjs/core/Shaders/kernelBlur.vertex.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/shadowMap.fragment.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/shadowMap.vertex.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/depthBoxBlur.fragment.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js",
+      "node_modules/@babylonjs/core/Shaders/shadowMap.fragment.js",
+      "node_modules/@babylonjs/core/Shaders/shadowMap.vertex.js",
+      "node_modules/@babylonjs/core/Shaders/depthBoxBlur.fragment.js",
+      "node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js",
+      "_babylon-C2MG_MRF.js",
+      "node_modules/@babylonjs/loaders/glTF/2.0/glTFLoaderAnimation.pure.js",
+      "node_modules/@babylonjs/core/Materials/PBR/openpbrMaterial.pure.js",
+      "node_modules/@babylonjs/loaders/glTF/2.0/openpbrMaterialLoadingAdapter.js",
+      "node_modules/@babylonjs/core/Materials/PBR/pbrMaterial.pure.js",
+      "node_modules/@babylonjs/loaders/glTF/2.0/pbrMaterialLoadingAdapter.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/outline.fragment.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/outline.vertex.js",
+      "node_modules/@babylonjs/core/Shaders/outline.fragment.js",
+      "node_modules/@babylonjs/core/Shaders/outline.vertex.js",
+      "node_modules/@babylonjs/materials/cell/cell.vertex.js",
+      "node_modules/@babylonjs/materials/cell/wgsl/cell.vertex.js",
+      "node_modules/@babylonjs/materials/cell/wgsl/cell.fragment.js"
+    ]
+  },
+  "_brdfTextureTools-BrSDJ8Wk.js": {
+    "file": "assets/brdfTextureTools-BrSDJ8Wk.js",
+    "name": "brdfTextureTools",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_retarget-BR9o7Njh.js",
+      "_babylon-C2MG_MRF.js",
+      "_textureTools-DNPw76c9.js"
+    ],
+    "dynamicImports": [
+      "node_modules/@babylonjs/core/ShadersWGSL/rgbdDecode.fragment.js",
+      "node_modules/@babylonjs/core/Shaders/rgbdDecode.fragment.js",
+      "node_modules/@babylonjs/core/Shaders/rgbdEncode.fragment.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/rgbdEncode.fragment.js"
+    ]
+  },
+  "_buffer.pure-wB8ct3bV.js": {
+    "file": "assets/buffer.pure-wB8ct3bV.js",
+    "name": "buffer.pure",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_logger-Bv2UG8ST.js",
+      "_thinEngine.pure-BlpmKJZF.js",
+      "_bufferUtils-C6Uto34_.js"
+    ]
+  },
+  "_bufferUtils-C6Uto34_.js": {
+    "file": "assets/bufferUtils-C6Uto34_.js",
+    "name": "bufferUtils",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_logger-Bv2UG8ST.js"
+    ]
+  },
+  "_bumpFragment-Cfj6LfV8.js": {
+    "file": "assets/bumpFragment-Cfj6LfV8.js",
+    "name": "bumpFragment",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_reflectionFunction-XWczT6dv.js"
+    ]
+  },
+  "_bumpFragment-XEVHF6x6.js": {
+    "file": "assets/bumpFragment-XEVHF6x6.js",
+    "name": "bumpFragment",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_reflectionFunction-CygR95sW.js"
+    ]
+  },
+  "_bumpVertex-9hu-vYFZ.js": {
+    "file": "assets/bumpVertex-9hu-vYFZ.js",
+    "name": "bumpVertex",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_bumpVertex-CUYL2Tx2.js": {
+    "file": "assets/bumpVertex-CUYL2Tx2.js",
+    "name": "bumpVertex",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_bumpVertexDeclaration-DTKwbX22.js": {
+    "file": "assets/bumpVertexDeclaration-DTKwbX22.js",
+    "name": "bumpVertexDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_bumpVertexDeclaration-Wq_54UpT.js": {
+    "file": "assets/bumpVertexDeclaration-Wq_54UpT.js",
+    "name": "bumpVertexDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_clipPlaneFragment-Dc7MhVQM.js": {
+    "file": "assets/clipPlaneFragment-Dc7MhVQM.js",
+    "name": "clipPlaneFragment",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_clipPlaneVertex-B6vjCJKp.js": {
+    "file": "assets/clipPlaneVertex-B6vjCJKp.js",
+    "name": "clipPlaneVertex",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_clipPlaneVertex-C26LcOi4.js": {
+    "file": "assets/clipPlaneVertex-C26LcOi4.js",
+    "name": "clipPlaneVertex",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_cubemapToSphericalPolynomial-Ds-dn8GS.js": {
+    "file": "assets/cubemapToSphericalPolynomial-Ds-dn8GS.js",
+    "name": "cubemapToSphericalPolynomial",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_math.color.pure-Q8VyjntR.js",
+      "_math.scalar.functions-Ci74PiV6.js",
+      "_babylon-C2MG_MRF.js"
+    ]
+  },
+  "_dds.pure-C6qdcYJk.js": {
+    "file": "assets/dds.pure-C6qdcYJk.js",
+    "name": "dds.pure",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_logger-Bv2UG8ST.js",
+      "_math.scalar.functions-Ci74PiV6.js",
+      "_bufferUtils-C6Uto34_.js",
+      "_textureTools-DNPw76c9.js",
+      "_cubemapToSphericalPolynomial-Ds-dn8GS.js"
+    ]
+  },
+  "_decalFragment-DDL_hD2R.js": {
+    "file": "assets/decalFragment-DDL_hD2R.js",
+    "name": "decalFragment",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_decalFragment-DdT-Op9L.js": {
+    "file": "assets/decalFragment-DdT-Op9L.js",
+    "name": "decalFragment",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_decorators-BCsPFieX.js": {
+    "file": "assets/decorators-BCsPFieX.js",
+    "name": "decorators",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js"
+    ]
+  },
+  "_decorators.serialization-DgzNNt_I.js": {
+    "file": "assets/decorators.serialization-DgzNNt_I.js",
+    "name": "decorators.serialization",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_precisionDate-_pxQmcJS.js",
+      "_math.color.pure-Q8VyjntR.js",
+      "_decorators-BCsPFieX.js"
+    ]
+  },
+  "_defaultUboDeclaration-4XBhzgTq.js": {
+    "file": "assets/defaultUboDeclaration-4XBhzgTq.js",
+    "name": "defaultUboDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_sceneUboDeclaration-D7P0y9kI.js",
+      "_meshUboDeclaration-Fi1yVgPJ.js"
+    ]
+  },
+  "_defaultUboDeclaration-C2QkdCE8.js": {
+    "file": "assets/defaultUboDeclaration-C2QkdCE8.js",
+    "name": "defaultUboDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_sceneUboDeclaration-BVBTCp7N.js",
+      "_meshUboDeclaration-CTVEj3hK.js"
+    ]
+  },
+  "_depthPrePass-BBljQt45.js": {
+    "file": "assets/depthPrePass-BBljQt45.js",
+    "name": "depthPrePass",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_depthPrePass-DwDy_y6F.js": {
+    "file": "assets/depthPrePass-DwDy_y6F.js",
+    "name": "depthPrePass",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_drawWrapper-BW1eBKj6.js": {
+    "file": "assets/drawWrapper-BW1eBKj6.js",
+    "name": "drawWrapper",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_precisionDate-_pxQmcJS.js"
+    ]
+  },
+  "_dumpTools.pure-CkJubRXA.js": {
+    "file": "assets/dumpTools.pure-CkJubRXA.js",
+    "name": "dumpTools.pure",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_retarget-BR9o7Njh.js",
+      "_engineStore-ByhWUXd8.js",
+      "_logger-Bv2UG8ST.js",
+      "_math.scalar.functions-Ci74PiV6.js",
+      "_decorators-BCsPFieX.js",
+      "_tools.pure-CUUZ-Zpu.js",
+      "_babylon-C2MG_MRF.js"
+    ],
+    "dynamicImports": [
+      "_thinEngine.pure-BlpmKJZF.js",
+      "node_modules/@babylonjs/core/Shaders/pass.fragment.js"
+    ]
+  },
+  "_engineStore-ByhWUXd8.js": {
+    "file": "assets/engineStore-ByhWUXd8.js",
+    "name": "engineStore",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js"
+    ]
+  },
+  "_fogFragment-DeYIfNuN.js": {
+    "file": "assets/fogFragment-DeYIfNuN.js",
+    "name": "fogFragment",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_harmonicsFunctions-B73yHmIV.js": {
+    "file": "assets/harmonicsFunctions-B73yHmIV.js",
+    "name": "harmonicsFunctions",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_harmonicsFunctions-yss8J14X.js": {
+    "file": "assets/harmonicsFunctions-yss8J14X.js",
+    "name": "harmonicsFunctions",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_helperFunctions-CXgl4J9v.js": {
+    "file": "assets/helperFunctions-CXgl4J9v.js",
+    "name": "helperFunctions",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_instancesDeclaration-Ch5J9ALt.js": {
+    "file": "assets/instancesDeclaration-Ch5J9ALt.js",
+    "name": "instancesDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_instancesDeclaration-wb11pT22.js": {
+    "file": "assets/instancesDeclaration-wb11pT22.js",
+    "name": "instancesDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_internalTexture-CGVgU7WF.js": {
+    "file": "assets/internalTexture-CGVgU7WF.js",
+    "name": "internalTexture",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_engineStore-ByhWUXd8.js"
+    ]
+  },
+  "_kernelBlurVaryingDeclaration-BQBjFpOt.js": {
+    "file": "assets/kernelBlurVaryingDeclaration-BQBjFpOt.js",
+    "name": "kernelBlurVaryingDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_kernelBlurVaryingDeclaration-BSyvy3eO.js": {
+    "file": "assets/kernelBlurVaryingDeclaration-BSyvy3eO.js",
+    "name": "kernelBlurVaryingDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_lightConstants-AkzrzUy1.js": {
+    "file": "assets/lightConstants-AkzrzUy1.js",
+    "name": "lightConstants",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_logger-Bv2UG8ST.js",
+      "_tools.pure-CUUZ-Zpu.js"
+    ]
+  },
+  "_lightFragment-IveqMbOd.js": {
+    "file": "assets/lightFragment-IveqMbOd.js",
+    "name": "lightFragment",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_lightFragment-tU2RaitV.js": {
+    "file": "assets/lightFragment-tU2RaitV.js",
+    "name": "lightFragment",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_lightVxFragmentDeclaration-e60_iLnd.js": {
+    "file": "assets/lightVxFragmentDeclaration-e60_iLnd.js",
+    "name": "lightVxFragmentDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_lightsFragmentFunctions-C9PP9uQ6.js": {
+    "file": "assets/lightsFragmentFunctions-C9PP9uQ6.js",
+    "name": "lightsFragmentFunctions",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_depthPrePass-DwDy_y6F.js"
+    ]
+  },
+  "_logDepthDeclaration-v6qm295C.js": {
+    "file": "assets/logDepthDeclaration-v6qm295C.js",
+    "name": "logDepthDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_logDepthFragment-CzBVOZVf.js": {
+    "file": "assets/logDepthFragment-CzBVOZVf.js",
+    "name": "logDepthFragment",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_logDepthVertex-CComNCnJ.js": {
+    "file": "assets/logDepthVertex-CComNCnJ.js",
+    "name": "logDepthVertex",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_logDepthVertex-Co-VluqZ.js": {
+    "file": "assets/logDepthVertex-Co-VluqZ.js",
+    "name": "logDepthVertex",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_logger-Bv2UG8ST.js": {
+    "file": "assets/logger-Bv2UG8ST.js",
+    "name": "logger",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js"
+    ]
+  },
+  "_mainUVVaryingDeclaration-CyMOiEhF.js": {
+    "file": "assets/mainUVVaryingDeclaration-CyMOiEhF.js",
+    "name": "mainUVVaryingDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_mainUVVaryingDeclaration-DKE87__h.js": {
+    "file": "assets/mainUVVaryingDeclaration-DKE87__h.js",
+    "name": "mainUVVaryingDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_material.pure-DA4oFtkA.js": {
+    "file": "assets/material.pure-DA4oFtkA.js",
+    "name": "material.pure",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_engineStore-ByhWUXd8.js",
+      "_logger-Bv2UG8ST.js",
+      "_precisionDate-_pxQmcJS.js",
+      "_thinEngine.pure-BlpmKJZF.js",
+      "_buffer.pure-wB8ct3bV.js",
+      "_math.color.pure-Q8VyjntR.js",
+      "_math.plane-BZm3Ziur.js",
+      "_decorators-BCsPFieX.js",
+      "_tools.pure-CUUZ-Zpu.js",
+      "_decorators.serialization-DgzNNt_I.js",
+      "_lightConstants-AkzrzUy1.js",
+      "_sceneComponent-BVUGDGYw.js",
+      "_drawWrapper-BW1eBKj6.js"
+    ]
+  },
+  "_math.color.pure-Q8VyjntR.js": {
+    "file": "assets/math.color.pure-Q8VyjntR.js",
+    "name": "math.color.pure",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_engineStore-ByhWUXd8.js",
+      "_performanceConfigurator-CbZh2rDR.js",
+      "_math.scalar.functions-Ci74PiV6.js",
+      "_typeStore-DbYN1B8U.js"
+    ]
+  },
+  "_math.plane-BZm3Ziur.js": {
+    "file": "assets/math.plane-BZm3Ziur.js",
+    "name": "math.plane",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_math.color.pure-Q8VyjntR.js"
+    ]
+  },
+  "_math.scalar.functions-Ci74PiV6.js": {
+    "file": "assets/math.scalar.functions-Ci74PiV6.js",
+    "name": "math.scalar.functions",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js"
+    ]
+  },
+  "_math.size-DQWPnAVc.js": {
+    "file": "assets/math.size-DQWPnAVc.js",
+    "name": "math.size",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js"
+    ]
+  },
+  "_meshUboDeclaration-CTVEj3hK.js": {
+    "file": "assets/meshUboDeclaration-CTVEj3hK.js",
+    "name": "meshUboDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_meshUboDeclaration-Fi1yVgPJ.js": {
+    "file": "assets/meshUboDeclaration-Fi1yVgPJ.js",
+    "name": "meshUboDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_metrics-BD1DeY2Z.css": {
+    "file": "assets/metrics-BD1DeY2Z.css",
+    "src": "_metrics-BD1DeY2Z.css"
+  },
+  "_metrics-DEDQ-ZYb.js": {
+    "file": "assets/metrics-DEDQ-ZYb.js",
+    "name": "metrics",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js"
+    ],
+    "css": [
+      "assets/metrics-BD1DeY2Z.css"
+    ]
+  },
+  "_morphTargetsVertex-B-PV7pd8.js": {
+    "file": "assets/morphTargetsVertex-B-PV7pd8.js",
+    "name": "morphTargetsVertex",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_morphTargetsVertex-D70N4oiM.js": {
+    "file": "assets/morphTargetsVertex-D70N4oiM.js",
+    "name": "morphTargetsVertex",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_oitFragment-CJA1_nvq.js": {
+    "file": "assets/oitFragment-CJA1_nvq.js",
+    "name": "oitFragment",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_reflectionFunction-CygR95sW.js"
+    ]
+  },
+  "_oitFragment-DMw0fpCx.js": {
+    "file": "assets/oitFragment-DMw0fpCx.js",
+    "name": "oitFragment",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_reflectionFunction-XWczT6dv.js"
+    ]
+  },
+  "_openpbrTransmissionLayerData-BMAs7USD.js": {
+    "file": "assets/openpbrTransmissionLayerData-BMAs7USD.js",
+    "name": "openpbrTransmissionLayerData",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_openpbrTransmissionLayerData-D9Ptq2fB.js": {
+    "file": "assets/openpbrTransmissionLayerData-D9Ptq2fB.js",
+    "name": "openpbrTransmissionLayerData",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_openpbrUboDeclaration-CDR1Vv_X.js": {
+    "file": "assets/openpbrUboDeclaration-CDR1Vv_X.js",
+    "name": "openpbrUboDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_sceneUboDeclaration-D7P0y9kI.js",
+      "_meshUboDeclaration-Fi1yVgPJ.js"
+    ]
+  },
+  "_openpbrUboDeclaration-D7GENFz-.js": {
+    "file": "assets/openpbrUboDeclaration-D7GENFz-.js",
+    "name": "openpbrUboDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_sceneUboDeclaration-BVBTCp7N.js",
+      "_meshUboDeclaration-CTVEj3hK.js"
+    ]
+  },
+  "_packingFunctions-ClFIjwrb.js": {
+    "file": "assets/packingFunctions-ClFIjwrb.js",
+    "name": "packingFunctions",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_packingFunctions-Dq7UPV7e.js": {
+    "file": "assets/packingFunctions-Dq7UPV7e.js",
+    "name": "packingFunctions",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_pbrBRDFFunctions-DTheZhtn.js": {
+    "file": "assets/pbrBRDFFunctions-DTheZhtn.js",
+    "name": "pbrBRDFFunctions",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_pbrBRDFFunctions-Y-LYsXUJ.js": {
+    "file": "assets/pbrBRDFFunctions-Y-LYsXUJ.js",
+    "name": "pbrBRDFFunctions",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_pbrDebug-CaA7N4RI.js": {
+    "file": "assets/pbrDebug-CaA7N4RI.js",
+    "name": "pbrDebug",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_depthPrePass-BBljQt45.js",
+      "_mainUVVaryingDeclaration-CyMOiEhF.js"
+    ]
+  },
+  "_pbrDebug-Da0sp3-c.js": {
+    "file": "assets/pbrDebug-Da0sp3-c.js",
+    "name": "pbrDebug",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_mainUVVaryingDeclaration-DKE87__h.js",
+      "_depthPrePass-DwDy_y6F.js"
+    ]
+  },
+  "_pbrIBLFunctions-8TQCFdCL.js": {
+    "file": "assets/pbrIBLFunctions-8TQCFdCL.js",
+    "name": "pbrIBLFunctions",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_pbrIBLFunctions-BFBi_Q-q.js": {
+    "file": "assets/pbrIBLFunctions-BFBi_Q-q.js",
+    "name": "pbrIBLFunctions",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_pbrUboDeclaration-BBDTg-NM.js": {
+    "file": "assets/pbrUboDeclaration-BBDTg-NM.js",
+    "name": "pbrUboDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_sceneUboDeclaration-D7P0y9kI.js",
+      "_meshUboDeclaration-Fi1yVgPJ.js"
+    ]
+  },
+  "_pbrUboDeclaration-Di2yKHx1.js": {
+    "file": "assets/pbrUboDeclaration-Di2yKHx1.js",
+    "name": "pbrUboDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_sceneUboDeclaration-BVBTCp7N.js",
+      "_meshUboDeclaration-CTVEj3hK.js"
+    ]
+  },
+  "_performanceConfigurator-CbZh2rDR.js": {
+    "file": "assets/performanceConfigurator-CbZh2rDR.js",
+    "name": "performanceConfigurator",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js"
+    ]
+  },
+  "_precisionDate-_pxQmcJS.js": {
+    "file": "assets/precisionDate-_pxQmcJS.js",
+    "name": "precisionDate",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js"
+    ]
+  },
+  "_reflectionFunction-CygR95sW.js": {
+    "file": "assets/reflectionFunction-CygR95sW.js",
+    "name": "reflectionFunction",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_reflectionFunction-XWczT6dv.js": {
+    "file": "assets/reflectionFunction-XWczT6dv.js",
+    "name": "reflectionFunction",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_retarget-BR9o7Njh.js": {
+    "file": "assets/retarget-BR9o7Njh.js",
+    "name": "retarget",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_metrics-DEDQ-ZYb.js"
+    ],
+    "dynamicImports": [
+      "node_modules/tone/build/esm/index.js"
+    ]
+  },
+  "_rolldown-runtime-B0fFmPBj.js": {
+    "file": "assets/rolldown-runtime-B0fFmPBj.js",
+    "name": "rolldown-runtime"
+  },
+  "_samplerVertexImplementation-CNIIdIAm.js": {
+    "file": "assets/samplerVertexImplementation-CNIIdIAm.js",
+    "name": "samplerVertexImplementation",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_samplerVertexImplementation-DYKYTo2-.js": {
+    "file": "assets/samplerVertexImplementation-DYKYTo2-.js",
+    "name": "samplerVertexImplementation",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_sceneComponent-BVUGDGYw.js": {
+    "file": "assets/sceneComponent-BVUGDGYw.js",
+    "name": "sceneComponent",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_engineStore-ByhWUXd8.js",
+      "_thinEngine.pure-BlpmKJZF.js",
+      "_buffer.pure-wB8ct3bV.js",
+      "_math.color.pure-Q8VyjntR.js",
+      "_smartArray-4z9iJzPr.js",
+      "_lightConstants-AkzrzUy1.js"
+    ]
+  },
+  "_sceneUboDeclaration-BVBTCp7N.js": {
+    "file": "assets/sceneUboDeclaration-BVBTCp7N.js",
+    "name": "sceneUboDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_sceneUboDeclaration-D7P0y9kI.js": {
+    "file": "assets/sceneUboDeclaration-D7P0y9kI.js",
+    "name": "sceneUboDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_sceneVertexDeclaration-B2heT3bX.js": {
+    "file": "assets/sceneVertexDeclaration-B2heT3bX.js",
+    "name": "sceneVertexDeclaration",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_shaderStore-aBNeIjJY.js": {
+    "file": "assets/shaderStore-aBNeIjJY.js",
+    "name": "shaderStore",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js"
+    ]
+  },
+  "_shadowsVertex-BNA9QWaf.js": {
+    "file": "assets/shadowsVertex-BNA9QWaf.js",
+    "name": "shadowsVertex",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_shadowsVertex-ChXr_sBO.js": {
+    "file": "assets/shadowsVertex-ChXr_sBO.js",
+    "name": "shadowsVertex",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_smartArray-4z9iJzPr.js": {
+    "file": "assets/smartArray-4z9iJzPr.js",
+    "name": "smartArray",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js"
+    ]
+  },
+  "_textureTools-DNPw76c9.js": {
+    "file": "assets/textureTools-DNPw76c9.js",
+    "name": "textureTools",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_bufferUtils-C6Uto34_.js",
+      "_babylon-C2MG_MRF.js"
+    ]
+  },
+  "_thinEngine.pure-BlpmKJZF.js": {
+    "file": "assets/thinEngine.pure-BlpmKJZF.js",
+    "name": "thinEngine.pure",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_engineStore-ByhWUXd8.js",
+      "_internalTexture-CGVgU7WF.js",
+      "_logger-Bv2UG8ST.js",
+      "_precisionDate-_pxQmcJS.js",
+      "_performanceConfigurator-CbZh2rDR.js"
+    ]
+  },
+  "_tools.pure-CUUZ-Zpu.js": {
+    "file": "assets/tools.pure-CUUZ-Zpu.js",
+    "name": "tools.pure",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_engineStore-ByhWUXd8.js",
+      "_logger-Bv2UG8ST.js",
+      "_precisionDate-_pxQmcJS.js",
+      "_typeStore-DbYN1B8U.js",
+      "_bufferUtils-C6Uto34_.js"
+    ]
+  },
+  "_typeStore-DbYN1B8U.js": {
+    "file": "assets/typeStore-DbYN1B8U.js",
+    "name": "typeStore",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js"
+    ]
+  },
+  "_vertexColorMixing-BofwnIN-.js": {
+    "file": "assets/vertexColorMixing-BofwnIN-.js",
+    "name": "vertexColorMixing",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "_vertexColorMixing-EuTqxAUF.js": {
+    "file": "assets/vertexColorMixing-EuTqxAUF.js",
+    "name": "vertexColorMixing",
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "babylon.html": {
+    "file": "assets/babylon-B1FYK98o.js",
+    "name": "babylon",
+    "src": "babylon.html",
+    "isEntry": true,
+    "imports": [
+      "_babylon-C2MG_MRF.js"
+    ]
+  },
+  "index.html": {
+    "file": "assets/index-8LRzxgSx.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_metrics-DEDQ-ZYb.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Materials/PBR/openpbrMaterial.pure.js": {
+    "file": "assets/openpbrMaterial.pure-DQdLC9tN.js",
+    "name": "openpbrMaterial.pure",
+    "src": "node_modules/@babylonjs/core/Materials/PBR/openpbrMaterial.pure.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_retarget-BR9o7Njh.js",
+      "_internalTexture-CGVgU7WF.js",
+      "_logger-Bv2UG8ST.js",
+      "_precisionDate-_pxQmcJS.js",
+      "_thinEngine.pure-BlpmKJZF.js",
+      "_buffer.pure-wB8ct3bV.js",
+      "_math.color.pure-Q8VyjntR.js",
+      "_typeStore-DbYN1B8U.js",
+      "_decorators-BCsPFieX.js",
+      "_tools.pure-CUUZ-Zpu.js",
+      "_decorators.serialization-DgzNNt_I.js",
+      "_smartArray-4z9iJzPr.js",
+      "_sceneComponent-BVUGDGYw.js",
+      "_material.pure-DA4oFtkA.js",
+      "_babylon-C2MG_MRF.js",
+      "_brdfTextureTools-BrSDJ8Wk.js"
+    ],
+    "dynamicImports": [
+      "node_modules/@babylonjs/core/ShadersWGSL/geometry.vertex.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/geometry.fragment.js",
+      "node_modules/@babylonjs/core/Shaders/geometry.vertex.js",
+      "node_modules/@babylonjs/core/Shaders/geometry.fragment.js",
+      "node_modules/@babylonjs/core/Shaders/openpbr.vertex.js",
+      "node_modules/@babylonjs/core/Shaders/openpbr.fragment.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/openpbr.vertex.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/openpbr.fragment.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Materials/PBR/pbrMaterial.pure.js": {
+    "file": "assets/pbrMaterial.pure-D9y0eeEL.js",
+    "name": "pbrMaterial.pure",
+    "src": "node_modules/@babylonjs/core/Materials/PBR/pbrMaterial.pure.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_retarget-BR9o7Njh.js",
+      "_logger-Bv2UG8ST.js",
+      "_precisionDate-_pxQmcJS.js",
+      "_buffer.pure-wB8ct3bV.js",
+      "_math.color.pure-Q8VyjntR.js",
+      "_typeStore-DbYN1B8U.js",
+      "_decorators-BCsPFieX.js",
+      "_decorators.serialization-DgzNNt_I.js",
+      "_smartArray-4z9iJzPr.js",
+      "_material.pure-DA4oFtkA.js",
+      "_babylon-C2MG_MRF.js",
+      "_brdfTextureTools-BrSDJ8Wk.js"
+    ],
+    "dynamicImports": [
+      "node_modules/@babylonjs/core/Shaders/pbr.vertex.js",
+      "node_modules/@babylonjs/core/Shaders/pbr.fragment.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/pbr.vertex.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/pbr.fragment.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Materials/Textures/Loaders/basisTextureLoader.js": {
+    "file": "assets/basisTextureLoader-P04XWUOm.js",
+    "name": "basisTextureLoader",
+    "src": "node_modules/@babylonjs/core/Materials/Textures/Loaders/basisTextureLoader.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_internalTexture-CGVgU7WF.js",
+      "_logger-Bv2UG8ST.js",
+      "_tools.pure-CUUZ-Zpu.js",
+      "_babylon-C2MG_MRF.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Materials/Textures/Loaders/ddsTextureLoader.js": {
+    "file": "assets/ddsTextureLoader-Dvb387bO.js",
+    "name": "ddsTextureLoader",
+    "src": "node_modules/@babylonjs/core/Materials/Textures/Loaders/ddsTextureLoader.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_babylon-C2MG_MRF.js",
+      "_dds.pure-C6qdcYJk.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Materials/Textures/Loaders/envTextureLoader.js": {
+    "file": "assets/envTextureLoader-DOz_sIPD.js",
+    "name": "envTextureLoader",
+    "src": "node_modules/@babylonjs/core/Materials/Textures/Loaders/envTextureLoader.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_retarget-BR9o7Njh.js",
+      "_internalTexture-CGVgU7WF.js",
+      "_logger-Bv2UG8ST.js",
+      "_thinEngine.pure-BlpmKJZF.js",
+      "_math.color.pure-Q8VyjntR.js",
+      "_math.scalar.functions-Ci74PiV6.js",
+      "_bufferUtils-C6Uto34_.js",
+      "_babylon-C2MG_MRF.js",
+      "_cubemapToSphericalPolynomial-Ds-dn8GS.js"
+    ],
+    "dynamicImports": [
+      "node_modules/@babylonjs/core/ShadersWGSL/rgbdDecode.fragment.js",
+      "node_modules/@babylonjs/core/Shaders/rgbdDecode.fragment.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Materials/Textures/Loaders/exrTextureLoader.js": {
+    "file": "assets/exrTextureLoader-BT7d9ElK.js",
+    "name": "exrTextureLoader",
+    "src": "node_modules/@babylonjs/core/Materials/Textures/Loaders/exrTextureLoader.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_logger-Bv2UG8ST.js",
+      "_math.scalar.functions-Ci74PiV6.js",
+      "_tools.pure-CUUZ-Zpu.js",
+      "_bufferUtils-C6Uto34_.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Materials/Textures/Loaders/hdrTextureLoader.js": {
+    "file": "assets/hdrTextureLoader-C1FHkqQY.js",
+    "name": "hdrTextureLoader",
+    "src": "node_modules/@babylonjs/core/Materials/Textures/Loaders/hdrTextureLoader.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Materials/Textures/Loaders/iesTextureLoader.js": {
+    "file": "assets/iesTextureLoader-EXKFe6A9.js",
+    "name": "iesTextureLoader",
+    "src": "node_modules/@babylonjs/core/Materials/Textures/Loaders/iesTextureLoader.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_math.scalar.functions-Ci74PiV6.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Materials/Textures/Loaders/ktxTextureLoader.js": {
+    "file": "assets/ktxTextureLoader-grw3Xq20.js",
+    "name": "ktxTextureLoader",
+    "src": "node_modules/@babylonjs/core/Materials/Textures/Loaders/ktxTextureLoader.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_logger-Bv2UG8ST.js",
+      "_tools.pure-CUUZ-Zpu.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Materials/Textures/Loaders/tgaTextureLoader.js": {
+    "file": "assets/tgaTextureLoader-CaBmToDh.js",
+    "name": "tgaTextureLoader",
+    "src": "node_modules/@babylonjs/core/Materials/Textures/Loaders/tgaTextureLoader.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_logger-Bv2UG8ST.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Meshes/mesh.vertexData.functions.js": {
+    "file": "assets/mesh.vertexData.functions-BL8K9R1V.js",
+    "name": "mesh.vertexData.functions",
+    "src": "node_modules/@babylonjs/core/Meshes/mesh.vertexData.functions.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js": {
+    "file": "assets/shadowMapFragmentSoftTransparentShadow-CmA23O4u.js",
+    "name": "shadowMapFragmentSoftTransparentShadow",
+    "src": "node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/color.fragment.js": {
+    "file": "assets/color.fragment-CguLRtoI.js",
+    "name": "color.fragment",
+    "src": "node_modules/@babylonjs/core/Shaders/color.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_babylon-C2MG_MRF.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/color.vertex.js": {
+    "file": "assets/color.vertex-xTbUiyBL.js",
+    "name": "color.vertex",
+    "src": "node_modules/@babylonjs/core/Shaders/color.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneVertex-B6vjCJKp.js",
+      "_vertexColorMixing-EuTqxAUF.js",
+      "_instancesDeclaration-wb11pT22.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/default.fragment.js": {
+    "file": "assets/default.fragment-DoMydud4.js",
+    "name": "default.fragment",
+    "src": "node_modules/@babylonjs/core/Shaders/default.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_depthPrePass-BBljQt45.js",
+      "_lightFragment-tU2RaitV.js",
+      "_babylon-C2MG_MRF.js",
+      "_oitFragment-CJA1_nvq.js",
+      "_sceneUboDeclaration-D7P0y9kI.js",
+      "_meshUboDeclaration-Fi1yVgPJ.js",
+      "_defaultUboDeclaration-4XBhzgTq.js",
+      "_reflectionFunction-CygR95sW.js",
+      "_mainUVVaryingDeclaration-CyMOiEhF.js",
+      "_bumpFragment-XEVHF6x6.js",
+      "_decalFragment-DDL_hD2R.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/default.vertex.js": {
+    "file": "assets/default.vertex-DNQ2TBiz.js",
+    "name": "default.vertex",
+    "src": "node_modules/@babylonjs/core/Shaders/default.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_babylon-C2MG_MRF.js",
+      "_clipPlaneVertex-B6vjCJKp.js",
+      "_vertexColorMixing-EuTqxAUF.js",
+      "_instancesDeclaration-wb11pT22.js",
+      "_sceneUboDeclaration-D7P0y9kI.js",
+      "_meshUboDeclaration-Fi1yVgPJ.js",
+      "_defaultUboDeclaration-4XBhzgTq.js",
+      "_mainUVVaryingDeclaration-CyMOiEhF.js",
+      "_samplerVertexImplementation-DYKYTo2-.js",
+      "_bumpVertexDeclaration-DTKwbX22.js",
+      "_morphTargetsVertex-D70N4oiM.js",
+      "_bumpVertex-CUYL2Tx2.js",
+      "_shadowsVertex-ChXr_sBO.js",
+      "_logDepthVertex-CComNCnJ.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/depthBoxBlur.fragment.js": {
+    "file": "assets/depthBoxBlur.fragment-CDUpd2Wo.js",
+    "name": "depthBoxBlur.fragment",
+    "src": "node_modules/@babylonjs/core/Shaders/depthBoxBlur.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/geometry.fragment.js": {
+    "file": "assets/geometry.fragment-DLc5LPZb.js",
+    "name": "geometry.fragment",
+    "src": "node_modules/@babylonjs/core/Shaders/geometry.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_babylon-C2MG_MRF.js",
+      "_sceneUboDeclaration-D7P0y9kI.js",
+      "_reflectionFunction-CygR95sW.js",
+      "_bumpFragment-XEVHF6x6.js",
+      "_pbrIBLFunctions-8TQCFdCL.js",
+      "_openpbrTransmissionLayerData-D9Ptq2fB.js",
+      "_pbrBRDFFunctions-Y-LYsXUJ.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/geometry.vertex.js": {
+    "file": "assets/geometry.vertex-DtQHP4Gw.js",
+    "name": "geometry.vertex",
+    "src": "node_modules/@babylonjs/core/Shaders/geometry.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneVertex-B6vjCJKp.js",
+      "_instancesDeclaration-wb11pT22.js",
+      "_sceneUboDeclaration-D7P0y9kI.js",
+      "_morphTargetsVertex-D70N4oiM.js",
+      "_bumpVertex-CUYL2Tx2.js",
+      "_harmonicsFunctions-yss8J14X.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/kernelBlur.fragment.js": {
+    "file": "assets/kernelBlur.fragment-g5_yR-fX.js",
+    "name": "kernelBlur.fragment",
+    "src": "node_modules/@babylonjs/core/Shaders/kernelBlur.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_kernelBlurVaryingDeclaration-BQBjFpOt.js",
+      "_packingFunctions-Dq7UPV7e.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/kernelBlur.vertex.js": {
+    "file": "assets/kernelBlur.vertex-1P_wqSL0.js",
+    "name": "kernelBlur.vertex",
+    "src": "node_modules/@babylonjs/core/Shaders/kernelBlur.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_kernelBlurVaryingDeclaration-BQBjFpOt.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/openpbr.fragment.js": {
+    "file": "assets/openpbr.fragment-DCzMU7-t.js",
+    "name": "openpbr.fragment",
+    "src": "node_modules/@babylonjs/core/Shaders/openpbr.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_depthPrePass-BBljQt45.js",
+      "_babylon-C2MG_MRF.js",
+      "_oitFragment-CJA1_nvq.js",
+      "_sceneUboDeclaration-D7P0y9kI.js",
+      "_meshUboDeclaration-Fi1yVgPJ.js",
+      "_reflectionFunction-CygR95sW.js",
+      "_mainUVVaryingDeclaration-CyMOiEhF.js",
+      "_pbrIBLFunctions-8TQCFdCL.js",
+      "_openpbrTransmissionLayerData-D9Ptq2fB.js",
+      "_pbrBRDFFunctions-Y-LYsXUJ.js",
+      "_harmonicsFunctions-yss8J14X.js",
+      "_openpbrUboDeclaration-CDR1Vv_X.js",
+      "_pbrDebug-CaA7N4RI.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/openpbr.vertex.js": {
+    "file": "assets/openpbr.vertex-CnfAnhS8.js",
+    "name": "openpbr.vertex",
+    "src": "node_modules/@babylonjs/core/Shaders/openpbr.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_babylon-C2MG_MRF.js",
+      "_clipPlaneVertex-B6vjCJKp.js",
+      "_vertexColorMixing-EuTqxAUF.js",
+      "_instancesDeclaration-wb11pT22.js",
+      "_sceneUboDeclaration-D7P0y9kI.js",
+      "_meshUboDeclaration-Fi1yVgPJ.js",
+      "_mainUVVaryingDeclaration-CyMOiEhF.js",
+      "_samplerVertexImplementation-DYKYTo2-.js",
+      "_morphTargetsVertex-D70N4oiM.js",
+      "_shadowsVertex-ChXr_sBO.js",
+      "_logDepthVertex-CComNCnJ.js",
+      "_pbrBRDFFunctions-Y-LYsXUJ.js",
+      "_harmonicsFunctions-yss8J14X.js",
+      "_openpbrUboDeclaration-CDR1Vv_X.js",
+      "_sceneVertexDeclaration-B2heT3bX.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/outline.fragment.js": {
+    "file": "assets/outline.fragment-BppiPmtA.js",
+    "name": "outline.fragment",
+    "src": "node_modules/@babylonjs/core/Shaders/outline.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_babylon-C2MG_MRF.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/outline.vertex.js": {
+    "file": "assets/outline.vertex-D-bQ5nXO.js",
+    "name": "outline.vertex",
+    "src": "node_modules/@babylonjs/core/Shaders/outline.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_babylon-C2MG_MRF.js",
+      "_clipPlaneVertex-B6vjCJKp.js",
+      "_instancesDeclaration-wb11pT22.js",
+      "_morphTargetsVertex-D70N4oiM.js",
+      "_logDepthVertex-CComNCnJ.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/pass.fragment.js": {
+    "file": "assets/pass.fragment-Dqkatowh.js",
+    "name": "pass.fragment",
+    "src": "node_modules/@babylonjs/core/Shaders/pass.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/pbr.fragment.js": {
+    "file": "assets/pbr.fragment-BJHPAGPC.js",
+    "name": "pbr.fragment",
+    "src": "node_modules/@babylonjs/core/Shaders/pbr.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_depthPrePass-BBljQt45.js",
+      "_lightFragment-tU2RaitV.js",
+      "_babylon-C2MG_MRF.js",
+      "_oitFragment-CJA1_nvq.js",
+      "_sceneUboDeclaration-D7P0y9kI.js",
+      "_meshUboDeclaration-Fi1yVgPJ.js",
+      "_reflectionFunction-CygR95sW.js",
+      "_mainUVVaryingDeclaration-CyMOiEhF.js",
+      "_bumpFragment-XEVHF6x6.js",
+      "_decalFragment-DDL_hD2R.js",
+      "_pbrIBLFunctions-8TQCFdCL.js",
+      "_pbrBRDFFunctions-Y-LYsXUJ.js",
+      "_harmonicsFunctions-yss8J14X.js",
+      "_pbrDebug-CaA7N4RI.js",
+      "_pbrUboDeclaration-BBDTg-NM.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/pbr.vertex.js": {
+    "file": "assets/pbr.vertex-6hlCMHrC.js",
+    "name": "pbr.vertex",
+    "src": "node_modules/@babylonjs/core/Shaders/pbr.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_babylon-C2MG_MRF.js",
+      "_clipPlaneVertex-B6vjCJKp.js",
+      "_vertexColorMixing-EuTqxAUF.js",
+      "_instancesDeclaration-wb11pT22.js",
+      "_sceneUboDeclaration-D7P0y9kI.js",
+      "_meshUboDeclaration-Fi1yVgPJ.js",
+      "_mainUVVaryingDeclaration-CyMOiEhF.js",
+      "_samplerVertexImplementation-DYKYTo2-.js",
+      "_bumpVertexDeclaration-DTKwbX22.js",
+      "_morphTargetsVertex-D70N4oiM.js",
+      "_bumpVertex-CUYL2Tx2.js",
+      "_shadowsVertex-ChXr_sBO.js",
+      "_logDepthVertex-CComNCnJ.js",
+      "_pbrBRDFFunctions-Y-LYsXUJ.js",
+      "_harmonicsFunctions-yss8J14X.js",
+      "_pbrUboDeclaration-BBDTg-NM.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/postprocess.vertex.js": {
+    "file": "assets/postprocess.vertex-W7ICydBF.js",
+    "name": "postprocess.vertex",
+    "src": "node_modules/@babylonjs/core/Shaders/postprocess.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/procedural.vertex.js": {
+    "file": "assets/procedural.vertex-C0RfGxBV.js",
+    "name": "procedural.vertex",
+    "src": "node_modules/@babylonjs/core/Shaders/procedural.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/rgbdDecode.fragment.js": {
+    "file": "assets/rgbdDecode.fragment-BfymyKSo.js",
+    "name": "rgbdDecode.fragment",
+    "src": "node_modules/@babylonjs/core/Shaders/rgbdDecode.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_babylon-C2MG_MRF.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/rgbdEncode.fragment.js": {
+    "file": "assets/rgbdEncode.fragment-w4QxHfvJ.js",
+    "name": "rgbdEncode.fragment",
+    "src": "node_modules/@babylonjs/core/Shaders/rgbdEncode.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_babylon-C2MG_MRF.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/shadowMap.fragment.js": {
+    "file": "assets/shadowMap.fragment-DkV2vVwo.js",
+    "name": "shadowMap.fragment",
+    "src": "node_modules/@babylonjs/core/Shaders/shadowMap.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_babylon-C2MG_MRF.js",
+      "_packingFunctions-Dq7UPV7e.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/shadowMap.vertex.js": {
+    "file": "assets/shadowMap.vertex-B_v-xkO2.js",
+    "name": "shadowMap.vertex",
+    "src": "node_modules/@babylonjs/core/Shaders/shadowMap.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_babylon-C2MG_MRF.js",
+      "_clipPlaneVertex-B6vjCJKp.js",
+      "_sceneUboDeclaration-D7P0y9kI.js",
+      "_meshUboDeclaration-Fi1yVgPJ.js",
+      "_morphTargetsVertex-D70N4oiM.js",
+      "_sceneVertexDeclaration-B2heT3bX.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/Shaders/textureProcessor.fragment.js": {
+    "file": "assets/textureProcessor.fragment-BJtRS1Ak.js",
+    "name": "textureProcessor.fragment",
+    "src": "node_modules/@babylonjs/core/Shaders/textureProcessor.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js": {
+    "file": "assets/shadowMapFragmentSoftTransparentShadow-f1EBdBA4.js",
+    "name": "shadowMapFragmentSoftTransparentShadow",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/color.fragment.js": {
+    "file": "assets/color.fragment-CdDorUZb.js",
+    "name": "color.fragment",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/color.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneFragment-Dc7MhVQM.js",
+      "_fogFragment-DeYIfNuN.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/color.vertex.js": {
+    "file": "assets/color.vertex-Cs0vVAiq.js",
+    "name": "color.vertex",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/color.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneVertex-C26LcOi4.js",
+      "_vertexColorMixing-BofwnIN-.js",
+      "_instancesDeclaration-Ch5J9ALt.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/default.fragment.js": {
+    "file": "assets/default.fragment-CZuTpTOD.js",
+    "name": "default.fragment",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/default.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneFragment-Dc7MhVQM.js",
+      "_fogFragment-DeYIfNuN.js",
+      "_sceneUboDeclaration-BVBTCp7N.js",
+      "_meshUboDeclaration-CTVEj3hK.js",
+      "_defaultUboDeclaration-C2QkdCE8.js",
+      "_reflectionFunction-XWczT6dv.js",
+      "_oitFragment-DMw0fpCx.js",
+      "_mainUVVaryingDeclaration-DKE87__h.js",
+      "_helperFunctions-CXgl4J9v.js",
+      "_depthPrePass-DwDy_y6F.js",
+      "_lightsFragmentFunctions-C9PP9uQ6.js",
+      "_bumpFragment-Cfj6LfV8.js",
+      "_logDepthDeclaration-v6qm295C.js",
+      "_decalFragment-DdT-Op9L.js",
+      "_lightFragment-IveqMbOd.js",
+      "_logDepthFragment-CzBVOZVf.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/default.vertex.js": {
+    "file": "assets/default.vertex-CVPqe3KO.js",
+    "name": "default.vertex",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/default.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneVertex-C26LcOi4.js",
+      "_vertexColorMixing-BofwnIN-.js",
+      "_instancesDeclaration-Ch5J9ALt.js",
+      "_sceneUboDeclaration-BVBTCp7N.js",
+      "_meshUboDeclaration-CTVEj3hK.js",
+      "_defaultUboDeclaration-C2QkdCE8.js",
+      "_mainUVVaryingDeclaration-DKE87__h.js",
+      "_helperFunctions-CXgl4J9v.js",
+      "_logDepthDeclaration-v6qm295C.js",
+      "_samplerVertexImplementation-CNIIdIAm.js",
+      "_bumpVertexDeclaration-Wq_54UpT.js",
+      "_lightVxFragmentDeclaration-e60_iLnd.js",
+      "_shadowsVertex-BNA9QWaf.js",
+      "_morphTargetsVertex-B-PV7pd8.js",
+      "_bumpVertex-9hu-vYFZ.js",
+      "_logDepthVertex-Co-VluqZ.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/depthBoxBlur.fragment.js": {
+    "file": "assets/depthBoxBlur.fragment-B0D9a76e.js",
+    "name": "depthBoxBlur.fragment",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/depthBoxBlur.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/geometry.fragment.js": {
+    "file": "assets/geometry.fragment-DXyRDWML.js",
+    "name": "geometry.fragment",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/geometry.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneFragment-Dc7MhVQM.js",
+      "_sceneUboDeclaration-BVBTCp7N.js",
+      "_reflectionFunction-XWczT6dv.js",
+      "_helperFunctions-CXgl4J9v.js",
+      "_bumpFragment-Cfj6LfV8.js",
+      "_pbrIBLFunctions-BFBi_Q-q.js",
+      "_pbrBRDFFunctions-DTheZhtn.js",
+      "_openpbrTransmissionLayerData-BMAs7USD.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/geometry.vertex.js": {
+    "file": "assets/geometry.vertex-BgW6WKln.js",
+    "name": "geometry.vertex",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/geometry.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneVertex-C26LcOi4.js",
+      "_instancesDeclaration-Ch5J9ALt.js",
+      "_sceneUboDeclaration-BVBTCp7N.js",
+      "_morphTargetsVertex-B-PV7pd8.js",
+      "_bumpVertex-9hu-vYFZ.js",
+      "_harmonicsFunctions-B73yHmIV.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/kernelBlur.fragment.js": {
+    "file": "assets/kernelBlur.fragment-BqBL0TLx.js",
+    "name": "kernelBlur.fragment",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/kernelBlur.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_kernelBlurVaryingDeclaration-BSyvy3eO.js",
+      "_packingFunctions-ClFIjwrb.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/kernelBlur.vertex.js": {
+    "file": "assets/kernelBlur.vertex-BV2s97TP.js",
+    "name": "kernelBlur.vertex",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/kernelBlur.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_kernelBlurVaryingDeclaration-BSyvy3eO.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/openpbr.fragment.js": {
+    "file": "assets/openpbr.fragment-CzK11wam.js",
+    "name": "openpbr.fragment",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/openpbr.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneFragment-Dc7MhVQM.js",
+      "_fogFragment-DeYIfNuN.js",
+      "_sceneUboDeclaration-BVBTCp7N.js",
+      "_meshUboDeclaration-CTVEj3hK.js",
+      "_reflectionFunction-XWczT6dv.js",
+      "_oitFragment-DMw0fpCx.js",
+      "_mainUVVaryingDeclaration-DKE87__h.js",
+      "_helperFunctions-CXgl4J9v.js",
+      "_depthPrePass-DwDy_y6F.js",
+      "_logDepthDeclaration-v6qm295C.js",
+      "_logDepthFragment-CzBVOZVf.js",
+      "_pbrIBLFunctions-BFBi_Q-q.js",
+      "_pbrBRDFFunctions-DTheZhtn.js",
+      "_openpbrTransmissionLayerData-BMAs7USD.js",
+      "_harmonicsFunctions-B73yHmIV.js",
+      "_openpbrUboDeclaration-D7GENFz-.js",
+      "_pbrDebug-Da0sp3-c.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/openpbr.vertex.js": {
+    "file": "assets/openpbr.vertex-ou4lEDjE.js",
+    "name": "openpbr.vertex",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/openpbr.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneVertex-C26LcOi4.js",
+      "_vertexColorMixing-BofwnIN-.js",
+      "_instancesDeclaration-Ch5J9ALt.js",
+      "_sceneUboDeclaration-BVBTCp7N.js",
+      "_meshUboDeclaration-CTVEj3hK.js",
+      "_mainUVVaryingDeclaration-DKE87__h.js",
+      "_helperFunctions-CXgl4J9v.js",
+      "_logDepthDeclaration-v6qm295C.js",
+      "_samplerVertexImplementation-CNIIdIAm.js",
+      "_shadowsVertex-BNA9QWaf.js",
+      "_morphTargetsVertex-B-PV7pd8.js",
+      "_logDepthVertex-Co-VluqZ.js",
+      "_pbrBRDFFunctions-DTheZhtn.js",
+      "_harmonicsFunctions-B73yHmIV.js",
+      "_openpbrUboDeclaration-D7GENFz-.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/outline.fragment.js": {
+    "file": "assets/outline.fragment-BkWfSBUF.js",
+    "name": "outline.fragment",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/outline.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneFragment-Dc7MhVQM.js",
+      "_logDepthDeclaration-v6qm295C.js",
+      "_logDepthFragment-CzBVOZVf.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/outline.vertex.js": {
+    "file": "assets/outline.vertex-BIpwhZPD.js",
+    "name": "outline.vertex",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/outline.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneVertex-C26LcOi4.js",
+      "_instancesDeclaration-Ch5J9ALt.js",
+      "_logDepthDeclaration-v6qm295C.js",
+      "_morphTargetsVertex-B-PV7pd8.js",
+      "_logDepthVertex-Co-VluqZ.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/pbr.fragment.js": {
+    "file": "assets/pbr.fragment-Ctx-3PU5.js",
+    "name": "pbr.fragment",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/pbr.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneFragment-Dc7MhVQM.js",
+      "_fogFragment-DeYIfNuN.js",
+      "_sceneUboDeclaration-BVBTCp7N.js",
+      "_meshUboDeclaration-CTVEj3hK.js",
+      "_reflectionFunction-XWczT6dv.js",
+      "_oitFragment-DMw0fpCx.js",
+      "_mainUVVaryingDeclaration-DKE87__h.js",
+      "_helperFunctions-CXgl4J9v.js",
+      "_depthPrePass-DwDy_y6F.js",
+      "_bumpFragment-Cfj6LfV8.js",
+      "_logDepthDeclaration-v6qm295C.js",
+      "_decalFragment-DdT-Op9L.js",
+      "_lightFragment-IveqMbOd.js",
+      "_logDepthFragment-CzBVOZVf.js",
+      "_pbrIBLFunctions-BFBi_Q-q.js",
+      "_pbrBRDFFunctions-DTheZhtn.js",
+      "_harmonicsFunctions-B73yHmIV.js",
+      "_pbrDebug-Da0sp3-c.js",
+      "_pbrUboDeclaration-Di2yKHx1.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/pbr.vertex.js": {
+    "file": "assets/pbr.vertex-CSOXsOm1.js",
+    "name": "pbr.vertex",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/pbr.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneVertex-C26LcOi4.js",
+      "_vertexColorMixing-BofwnIN-.js",
+      "_instancesDeclaration-Ch5J9ALt.js",
+      "_sceneUboDeclaration-BVBTCp7N.js",
+      "_meshUboDeclaration-CTVEj3hK.js",
+      "_mainUVVaryingDeclaration-DKE87__h.js",
+      "_helperFunctions-CXgl4J9v.js",
+      "_logDepthDeclaration-v6qm295C.js",
+      "_samplerVertexImplementation-CNIIdIAm.js",
+      "_bumpVertexDeclaration-Wq_54UpT.js",
+      "_shadowsVertex-BNA9QWaf.js",
+      "_morphTargetsVertex-B-PV7pd8.js",
+      "_bumpVertex-9hu-vYFZ.js",
+      "_logDepthVertex-Co-VluqZ.js",
+      "_pbrBRDFFunctions-DTheZhtn.js",
+      "_harmonicsFunctions-B73yHmIV.js",
+      "_pbrUboDeclaration-Di2yKHx1.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/postprocess.vertex.js": {
+    "file": "assets/postprocess.vertex-1c_v_VH4.js",
+    "name": "postprocess.vertex",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/postprocess.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/procedural.vertex.js": {
+    "file": "assets/procedural.vertex-wp9f5U3e.js",
+    "name": "procedural.vertex",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/procedural.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/rgbdDecode.fragment.js": {
+    "file": "assets/rgbdDecode.fragment-CJqn92Ts.js",
+    "name": "rgbdDecode.fragment",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/rgbdDecode.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_helperFunctions-CXgl4J9v.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/rgbdEncode.fragment.js": {
+    "file": "assets/rgbdEncode.fragment-x8EIvFbK.js",
+    "name": "rgbdEncode.fragment",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/rgbdEncode.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_helperFunctions-CXgl4J9v.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/shadowMap.fragment.js": {
+    "file": "assets/shadowMap.fragment-DsYuPX-O.js",
+    "name": "shadowMap.fragment",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/shadowMap.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneFragment-Dc7MhVQM.js",
+      "_packingFunctions-ClFIjwrb.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/shadowMap.vertex.js": {
+    "file": "assets/shadowMap.vertex-JrpX_zJ3.js",
+    "name": "shadowMap.vertex",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/shadowMap.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneVertex-C26LcOi4.js",
+      "_sceneUboDeclaration-BVBTCp7N.js",
+      "_meshUboDeclaration-CTVEj3hK.js",
+      "_helperFunctions-CXgl4J9v.js",
+      "_morphTargetsVertex-B-PV7pd8.js"
+    ]
+  },
+  "node_modules/@babylonjs/core/ShadersWGSL/textureProcessor.fragment.js": {
+    "file": "assets/textureProcessor.fragment-rMOaNwqP.js",
+    "name": "textureProcessor.fragment",
+    "src": "node_modules/@babylonjs/core/ShadersWGSL/textureProcessor.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js"
+    ]
+  },
+  "node_modules/@babylonjs/loaders/glTF/2.0/glTFLoaderAnimation.pure.js": {
+    "file": "assets/glTFLoaderAnimation.pure-DWqunUMB.js",
+    "name": "glTFLoaderAnimation.pure",
+    "src": "node_modules/@babylonjs/loaders/glTF/2.0/glTFLoaderAnimation.pure.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_math.color.pure-Q8VyjntR.js",
+      "_babylon-C2MG_MRF.js"
+    ]
+  },
+  "node_modules/@babylonjs/loaders/glTF/2.0/openpbrMaterialLoadingAdapter.js": {
+    "file": "assets/openpbrMaterialLoadingAdapter-DHEyq4nf.js",
+    "name": "openpbrMaterialLoadingAdapter",
+    "src": "node_modules/@babylonjs/loaders/glTF/2.0/openpbrMaterialLoadingAdapter.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_retarget-BR9o7Njh.js",
+      "_engineStore-ByhWUXd8.js",
+      "_buffer.pure-wB8ct3bV.js",
+      "_math.color.pure-Q8VyjntR.js",
+      "_decorators-BCsPFieX.js",
+      "_tools.pure-CUUZ-Zpu.js",
+      "_sceneComponent-BVUGDGYw.js",
+      "_material.pure-DA4oFtkA.js",
+      "_drawWrapper-BW1eBKj6.js",
+      "_babylon-C2MG_MRF.js"
+    ],
+    "dynamicImports": [
+      "node_modules/@babylonjs/core/ShadersWGSL/procedural.vertex.js",
+      "node_modules/@babylonjs/core/Shaders/procedural.vertex.js",
+      "node_modules/@babylonjs/core/ShadersWGSL/textureProcessor.fragment.js",
+      "node_modules/@babylonjs/core/Shaders/textureProcessor.fragment.js"
+    ]
+  },
+  "node_modules/@babylonjs/loaders/glTF/2.0/pbrMaterialLoadingAdapter.js": {
+    "file": "assets/pbrMaterialLoadingAdapter-DgbbCDtd.js",
+    "name": "pbrMaterialLoadingAdapter",
+    "src": "node_modules/@babylonjs/loaders/glTF/2.0/pbrMaterialLoadingAdapter.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_math.color.pure-Q8VyjntR.js",
+      "_babylon-C2MG_MRF.js"
+    ]
+  },
+  "node_modules/@babylonjs/materials/cell/cell.vertex.js": {
+    "file": "assets/cell.vertex-qYvwCVCx.js",
+    "name": "cell.vertex",
+    "src": "node_modules/@babylonjs/materials/cell/cell.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_babylon-C2MG_MRF.js",
+      "_clipPlaneVertex-B6vjCJKp.js",
+      "_vertexColorMixing-EuTqxAUF.js",
+      "_instancesDeclaration-wb11pT22.js",
+      "_shadowsVertex-ChXr_sBO.js",
+      "_logDepthVertex-CComNCnJ.js"
+    ]
+  },
+  "node_modules/@babylonjs/materials/cell/wgsl/cell.fragment.js": {
+    "file": "assets/cell.fragment-i1BBWBkF.js",
+    "name": "cell.fragment",
+    "src": "node_modules/@babylonjs/materials/cell/wgsl/cell.fragment.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneFragment-Dc7MhVQM.js",
+      "_fogFragment-DeYIfNuN.js",
+      "_helperFunctions-CXgl4J9v.js",
+      "_depthPrePass-DwDy_y6F.js",
+      "_lightsFragmentFunctions-C9PP9uQ6.js",
+      "_logDepthDeclaration-v6qm295C.js",
+      "_lightFragment-IveqMbOd.js",
+      "_logDepthFragment-CzBVOZVf.js"
+    ]
+  },
+  "node_modules/@babylonjs/materials/cell/wgsl/cell.vertex.js": {
+    "file": "assets/cell.vertex-C6EaYJMo.js",
+    "name": "cell.vertex",
+    "src": "node_modules/@babylonjs/materials/cell/wgsl/cell.vertex.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_shaderStore-aBNeIjJY.js",
+      "_clipPlaneVertex-C26LcOi4.js",
+      "_vertexColorMixing-BofwnIN-.js",
+      "_instancesDeclaration-Ch5J9ALt.js",
+      "_logDepthDeclaration-v6qm295C.js",
+      "_lightVxFragmentDeclaration-e60_iLnd.js",
+      "_shadowsVertex-BNA9QWaf.js",
+      "_logDepthVertex-Co-VluqZ.js"
+    ]
+  },
+  "node_modules/tone/build/esm/index.js": {
+    "file": "assets/esm-CVtFbgdp.js",
+    "name": "esm",
+    "src": "node_modules/tone/build/esm/index.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js"
+    ]
+  },
+  "three.html": {
+    "file": "assets/three-Cx7e-B4Q.js",
+    "name": "three",
+    "src": "three.html",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-B0fFmPBj.js",
+      "_metrics-DEDQ-ZYb.js",
+      "_retarget-BR9o7Njh.js"
+    ]
+  }
+}
