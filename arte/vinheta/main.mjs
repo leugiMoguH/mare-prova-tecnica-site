@@ -32,7 +32,7 @@ renderer.toneMappingExposure = LUZ.exp;
 // --- luz: chave quente com sombra, preenchimento frio, contraluz (rim)
 const sol = new THREE.DirectionalLight(...LUZ.sol);
 sol.position.set(-4, 6, 5);
-sol.castShadow = true;
+sol.castShadow = hora === 'dia';
 sol.shadow.mapSize.set(2048, 2048);
 Object.assign(sol.shadow.camera, { left: -4, right: 4, top: 4, bottom: -2, near: 1, far: 20 });
 sol.shadow.bias = -0.0004;
@@ -104,9 +104,10 @@ cen.traverse((o) => {
   const nome = o.material.name;
   o.material = toon(o.material, '#fff4dc', 0.18, vc);
   o.material.name = nome;
-  if (lamp) { o.material.emissive = new THREE.Color(hora === 'noite' ? '#ffcf70' : '#ffe0a0'); o.material.emissiveIntensity = hora === 'noite' ? 1.8 : 0.35; }
+  if (lamp) { o.material.emissive = new THREE.Color(hora === 'noite' ? '#ffcf70' : '#ffe0a0'); o.material.emissiveIntensity = hora === 'noite' ? 1.1 : 0.35; }
   if (hora === 'noite' && (o.material.name === 'interior' || o.material.name === 'vidro')) { o.material.emissive = new THREE.Color('#ffae55'); o.material.emissiveIntensity = o.material.name === 'vidro' ? 0.55 : 1.4; }
-  o.castShadow = o.receiveShadow = true;
+  o.receiveShadow = true;
+  o.castShadow = !['cal', 'calcada', 'azulejo', 'azulejoPalco', 'tijolo', 'vidro', 'interior'].includes(nome);
 });
 scene.add(cen);
 
@@ -167,7 +168,7 @@ const borrar = passe(`uniform sampler2D t; uniform vec2 dir; varying vec2 vUv;
       s += (texture2D(t, vUv + dir * float(i)).rgb + texture2D(t, vUv - dir * float(i)).rgb) * w; }
     gl_FragColor = vec4(s, 1.0); }`, { t: { value: null }, dir: { value: new THREE.Vector2() } });
 pos.uniforms.bloom = { value: blR[0].texture };
-pos.uniforms.forcaBloom = { value: hora === 'noite' ? 1.6 : 0.0 };
+pos.uniforms.forcaBloom = { value: hora === 'noite' ? 1.15 : 0.0 };
 const ecra = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), pos);
 const cenaPos = new THREE.Scene(); cenaPos.add(ecra);
 const camPos = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
@@ -208,6 +209,9 @@ addEventListener('resize', enquadrar);
 // --- ciclo
 const relogio = new THREE.Clock();
 let frames = 0, acum = 0, piores = [];
+const arranqueMs = Math.round(performance.now());
+const estavel = [];
+let pausas = 0, mudDpr = 0;
 function piscarEm(t) {
   const fase = t % 3.7;
   const v = fase < 0.12 ? Math.sin((fase / 0.12) * Math.PI) : 0;
@@ -224,18 +228,23 @@ if (tCaptura !== null) {
     mixer.update(dt);
     piscarEm(relogio.elapsedTime);
     desenhar();
-    frames++; acum += dt; piores.push(dt);
+    frames++; acum += dt;
     const calls = renderer.info.render.calls, tris = renderer.info.render.triangles;
     renderer.info.reset();
+    const t = relogio.elapsedTime;
+    if (t > 5) {
+      estavel.push(dt * 1000);
+      if (estavel.length > 1800) estavel.shift();
+      if (dt > 0.05) pausas++;
+    }
     if (acum > 2) {
-      piores.sort((a, b) => b - a);
       const medio = acum / frames;
-      if (!q.has('dpr') && relogio.elapsedTime > 6) {
-        const novo = medio > 0.03 ? Math.max(0.75, dpr - 0.15) : medio < 0.016 ? Math.min(dprMax, dpr + 0.1) : dpr;
-        if (novo !== dpr) { dpr = novo; renderer.setPixelRatio(dpr); enquadrar(); }
-      }
-      hud.textContent = `${Math.round(frames / acum)} fps · pior ${Math.round(piores[0] * 1000)} ms · ${calls} draws · ${Math.round(tris / 1000)}k tris · dpr ${dpr.toFixed(2)}`;
-      frames = 0; acum = 0; piores = [];
+      if (!q.has('dpr') && t > 6 && t < 20 && medio > 0.03 && dpr > 0.75) { dpr = Math.max(0.75, dpr - 0.15); mudDpr++; renderer.setPixelRatio(dpr); enquadrar(); }
+      const ord = [...estavel].sort((a, b) => a - b);
+      const pc = (x) => (ord.length ? Math.round(ord[Math.floor(x * (ord.length - 1))]) : '–');
+      hud.innerHTML = `${Math.round(frames / acum)} fps · p95 ${pc(0.95)} ms · p99 ${pc(0.99)} ms · pausas&gt;50ms ${pausas}<br>`
+        + `arranque ${arranqueMs} ms · ${calls} draws · ${Math.round(tris / 1000)}k tris · dpr ${dpr.toFixed(2)}${mudDpr ? ' (ajustado ' + mudDpr + '×)' : ''}`;
+      frames = 0; acum = 0;
     }
   });
 }

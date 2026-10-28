@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MARÉ — provas de arte</title>
+<style>
+:root{--fundo:#e9e2d8;--texto:#1f2a2a;--cartao:#fffaf2;--marca:#1e6b6a;--alerta:#b4462e}
+html,body{margin:0;background:var(--fundo);color:var(--texto);font:16px/1.45 system-ui,sans-serif}
+main{max-width:560px;margin:0 auto;padding:calc(20px + env(safe-area-inset-top)) 16px calc(24px + env(safe-area-inset-bottom))}
+h1{font-size:24px;margin:0 0 4px}
+p.sub{margin:0 0 20px;color:#1f2a2aaa}
+a.cartao{display:block;text-decoration:none;color:inherit;background:var(--cartao);border:1px solid #1f2a2a22;border-radius:14px;padding:14px 16px;margin-bottom:12px}
+a.cartao:active{background:#f3ebdf}
+a.cartao b{display:block;font-size:18px;color:var(--marca)}
+.etiqueta{display:inline-block;margin-top:6px;padding:2px 7px;border-radius:6px;background:var(--alerta);color:#fff;font:700 12px system-ui}
+ul{padding-left:20px;margin:6px 0 0}
+footer{margin-top:20px;font-size:13px;color:#1f2a2a99}
+</style>
+</head><body><main>
+<h1>MARÉ · provas de arte</h1>
+<p class="sub">Comparação 2D vs 3D. Abrir cada prova, experimentar os botões e anotar os números do canto superior esquerdo (fps, p95, pausas) ao fim de 10 s.</p>
+<a class="cartao" href="comparacao/prova2d/">
+  <b>Prova 2D — Kira articulada</b>
+  Imagem da Kira em camadas, deformada por ossos.
+  <ul><li>Repouso, aceno e dança</li><li>Pestanejar e sorriso</li><li>Troca de roupa: bomber ↔ hoodie</li></ul>
+</a>
+<a class="cartao" href="comparacao/prova3d/">
+  <b>Prova 3D — rig automático</b>
+  Pipeline automático: malha estática → esqueleto → animações.
+  <span class="etiqueta">MODELO SUBSTITUTO — NÃO É A KIRA</span>
+  <ul><li>Repouso, aceno, dança e andar</li><li>Arrastar para rodar a câmara</li><li>Sem expressões nem troca de roupa (ainda)</li></ul>
+</a>
+<a class="cartao" href="vinheta/">
+  <b>Cena de referência (anterior)</b>
+  Vinheta Azulejo com a primeira Kira 3D.
+</a>
+<footer>Personagem 3D de teste: Grab3D, CC0. Motor: three.js (MIT).</footer>
+</main></body></html>

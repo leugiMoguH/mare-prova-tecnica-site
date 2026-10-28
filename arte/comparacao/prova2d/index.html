@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MARÉ — Kira 2D articulada</title>
+<style>
+html,body{margin:0;height:100%;overflow:hidden;background:#e9e2d8;font:14px system-ui,sans-serif;color:#1f2a2a}
+canvas{display:block;width:100%;height:100%;touch-action:none}
+#painel{position:fixed;left:0;right:0;bottom:0;padding:10px max(10px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));display:flex;flex-wrap:wrap;gap:6px;justify-content:center;background:linear-gradient(transparent,#e9e2d8cc 30%)}
+#painel button{font:600 14px system-ui;padding:9px 12px;border-radius:10px;border:1px solid #1f2a2a33;background:#fffaf2;color:#1f2a2a;min-height:40px}
+#painel button[aria-pressed=true]{background:#1e6b6a;color:#fff;border-color:#1e6b6a}
+#painel .sep{width:100%;height:0}
+#hud{position:fixed;left:max(8px,env(safe-area-inset-left));top:calc(8px + env(safe-area-inset-top));font:12px ui-monospace,monospace;background:#1f2a2ad0;color:#fff;padding:5px 8px;border-radius:6px;white-space:pre}
+#titulo{position:fixed;right:max(8px,env(safe-area-inset-right));top:calc(8px + env(safe-area-inset-top));font:700 13px system-ui;color:#1f2a2a99;text-align:right}
+</style>
+<script type="importmap">{"imports":{"three":"../../node_modules/three/build/three.module.js","three/addons/":"../../node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<div id="hud">a carregar…</div>
+<div id="titulo">Kira · braço 2D<br><span style="font-weight:400">malha deformada por ossos</span></div>
+<div id="painel">
+  <button data-anim="repouso" aria-pressed="true">Repouso</button>
+  <button data-anim="aceno">Aceno</button>
+  <button data-anim="danca">Dança</button>
+  <span class="sep"></span>
+  <button data-roupa="mestra" aria-pressed="true">Bomber</button>
+  <button data-roupa="hoodie">Hoodie</button>
+  <button data-ver="malha">Malha</button>
+  <button data-ver="ossos">Ossos</button>
+</div>
+<script type="module" src="./cena2d.mjs?v=1793211675846"></script>
+<div style="position:fixed;right:8px;bottom:2px;font:10px system-ui;color:#8888;pointer-events:none">2026-10-28 18:21Z</div></body></html>
