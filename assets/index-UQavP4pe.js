@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-B0fFmPBj.js";import{s as t,t as n}from"./metrics-N1KPQyUc.js";function r(){return(r=e((()=>{document.querySelector(`#build`).textContent=`f2988a2 · 2026-10-28 10:09Z`,document.querySelector(`#device`).textContent=JSON.stringify(n(),null,2)})))()}function i(){return(i=e((()=>{t(),r()})))()}i();

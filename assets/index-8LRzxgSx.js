@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-B0fFmPBj.js";import{s as t,t as n}from"./metrics-DEDQ-ZYb.js";function r(){return(r=e((()=>{document.querySelector(`#build`).textContent=`e811318 · 2026-10-28 08:52Z`,document.querySelector(`#device`).textContent=JSON.stringify(n(),null,2)})))()}function i(){return(i=e((()=>{t(),r()})))()}i();
