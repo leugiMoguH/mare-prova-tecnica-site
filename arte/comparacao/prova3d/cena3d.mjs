@@ -78,11 +78,11 @@ const hud = document.getElementById('hud'), tempos = [];
 let ultimo = performance.now(), pausas = 0;
 const t0 = performance.now();
 function ciclo(agora) {
-  const dt = Math.min((agora - ultimo) / 1000, 0.1); ultimo = agora;
+  const ms = agora - ultimo, dt = Math.min(ms / 1000, 0.1); ultimo = agora; // estatísticas com o tempo real, sem limite
   if (T_FIXO === null) mixer.update(dt);
   controlos.update();
   renderer.render(cena, cam);
-  if (agora - t0 > 3000) { tempos.push(dt * 1000); if (dt > 0.05) pausas++; if (tempos.length > 600) tempos.shift(); }
+  if (agora - t0 > 3000) { tempos.push(ms); if (ms > 50) pausas++; if (tempos.length > 600) tempos.shift(); }
   if (tempos.length && Math.round(agora / 500) !== Math.round((agora - dt * 1000) / 500)) {
     const o = [...tempos].sort((a, b) => a - b), p95 = o[Math.floor(o.length * 0.95)];
     hud.textContent = `${(1000 / (o.reduce((s, v) => s + v, 0) / o.length)).toFixed(0)} fps · p95 ${p95.toFixed(1)} ms · pausas ${pausas}\n${renderer.info.render.calls} draws · ${tris} tri`;
